@@ -1,0 +1,144 @@
+:root {
+    --main-color: white;
+    --second-color: #414e7a;
+    --font-size: 25px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url("/images/colorful-paper-clips-white-paper-pen-calculator-sunglasses-black-wooden-background (1).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.calc {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    width: 80%;
+    min-width: 200px;
+}
+
+.calc_form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: var(--second-color);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.calc_text {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: var(--main-color);
+    font-size: var(--font-size);
+    text-align: center;
+    margin-top: 15px;
+}
+
+.calc_text h2 {
+    text-transform: capitalize;
+    padding: 3px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.form_calc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 10px;
+}
+
+.form_calc input {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: var(--font-size);
+    color: var(--main-color);
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    margin: 10px 0px;
+}
+
+.form_calc h3 {
+    text-align: center;
+    font-size: var(--font-size);
+    color: var(--main-color);
+}
+
+form button {
+    font-size: var(--font-size);
+    border-radius: 25px;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(223, 223, 223);
+}
+.form_date {
+    font-size: var(--font-size);
+    border-radius: 25px;
+    padding: 5px;
+    color: var(--second-color);
+    text-align: center;
+}
+
+label {
+    color: var(--main-color);
+    text-align: center;
+    font-size: var(--font-size);
+    padding: 3px;
+    text-transform: capitalize;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calc_form {
+        width: 90%;
+    }
+
+    .form_calc {
+        grid-template-columns: 1fr;
+    }
+
+    .calc_text {
+        font-size: calc(var(--font-size) - 5px);
+    }
+
+    form button, .form_date {
+        font-size: calc(var(--font-size) - 5px);
+    }
+}

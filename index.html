@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task One</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="calc">
+
+        <div class="calc_form" >
+            <div class="calc_text">
+                <h2>calculate your age</h2>
+            </div>
+            <form id="form">
+                <label>select your birthday</label>
+                <input type="date" id="dateandtime" max="2024-12-31" class="form_date"/>
+                <label> current date</label>
+                <input type="date" id="currerntdate" max="2024-12-31" class="form_date" readonly/>
+
+                <div class="form_calc"> 
+                <div>
+                    <input type="text" disabled id="year" value="0">
+                    <h3>Years</h3>
+                </div>
+                <div>
+                    <input type="text" disabled id="month" value="0">
+                <h3>Months</h3>
+                </div>
+                <div>
+                    <input type="text" disabled id="day" value="0">
+                    <h3>Days</h3>
+                </div>
+                
+            </div>
+                <button>Calculate</button>
+            </form>
+        </div>
+    </div>
+</div>
+    <script src="./index.js"></script>
+</body>
+</html>
